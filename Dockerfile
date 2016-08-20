@@ -23,7 +23,7 @@ RUN { \
 RUN curl -o wordpress.tar.gz -SL https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz \
 	&& echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c - \
 	&& tar -xzf wordpress.tar.gz -C /usr/src/ \
-	&& mv -f /usr/src/wordpress /var/www/html
+	&& mv -f /usr/src/wordpress /var/www/html \
 	&& rm wordpress.tar.gz \
 	&& chown -R nginx:nginx /var/www/html
 
