@@ -42,7 +42,7 @@ then
                           RewriteRule . /index.php [L]
                           </IfModule>
                           # END WordPress
-                  EOF
+EOF
                   chown www-data:www-data .htaccess
           fi
   fi
