@@ -3,7 +3,7 @@
 
 Optional ENV:
 
-1. WORDPRESS_DB_HOST (defaults: linked service)
+1. WORDPRESS_DB_HOST (defaults: linked service with label "mysql")
 2. WORDPRESS_DB_USER (defaults: root)
-3. WORDPRESS_DB_PASSWORD (defaults: MYSQL_ROOT_PASSWORD ENV in linked service)
+3. WORDPRESS_DB_PASSWORD (defaults: MYSQL_ROOT_PASSWORD ENV in linked service.)
 4. WORDPRESS_DB_NAME (defaults:wordpress)
