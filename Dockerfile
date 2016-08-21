@@ -3,7 +3,7 @@ FROM ipropertygroup/nginx:php7
 ENV WORDPRESS_VERSION 4.6
 ENV WORDPRESS_SHA1 830962689f350e43cd1a069f3a4f68a44c0339c8
 
-COPY nginx-wp.conf /etc/nginx/conf.d/
+COPY nginx-wp.conf /etc/nginx/conf.d/default.conf
 
 # install the PHP extensions we need
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var/lib/apt/lists/* \
