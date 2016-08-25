@@ -1,4 +1,4 @@
-FROM ipropertygroup/nginx:php7
+FROM ipropertygroup/webserver:nginx-php-7
 
 ENV WORDPRESS_VERSION 4.6
 ENV WORDPRESS_SHA1 830962689f350e43cd1a069f3a4f68a44c0339c8
